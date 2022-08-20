@@ -1,0 +1,7 @@
+{
+  "name": "angular-explore",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
