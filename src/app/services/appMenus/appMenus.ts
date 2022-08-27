@@ -9,5 +9,5 @@ export const AppMenus: AppMenusInterface[] = [
     { title: 'Profile', url: '/folder/Favorites', icon: 'person' },
     { title: 'Wishlist', url: '/folder/Archived', icon: 'heart' },
     { title: 'Orders', url: '/folder/Trash', icon: 'bag-check' },
-    { title: 'UI', url: '/folder/Trash', icon: 'build' },
+    { title: 'UI', url: '/folder/UI', icon: 'build' },
 ];
