@@ -1,0 +1,53 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-header>
+  <div class="header">
+    <ion-row>
+      <!-- ========= [Logo] ============= -->
+      <ion-col size="3">
+        <div class="logo-box">
+          <img src="https://images.indianexpress.com/2021/01/myntra.png" alt="" srcset="" class="logo">
+          <div>
+            Myntra
+          </div>
+        </div>
+      </ion-col>
+      <!-- ========= [Sub menus] ============= -->
+      <ion-col size="7">
+        <div class="sub-menus">
+          <ion-buttons>
+            <ion-button routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
+              routerLinkActive="selected" [title]="p.title" fill="clear" slot="icon-only" *ngFor="let p of subMenus">
+              <ion-icon [name]="p.icon + '-outline'"></ion-icon> {{ p.title }}
+            </ion-button>
+          </ion-buttons>
+          <!-- <ng-container *ngFor="let p of subMenus">
+            <div routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected"
+              [title]="p.title">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-outline'"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </div>
+          </ng-container> -->
+        </div>
+      </ion-col>
+      <ion-col size="2">
+        <div class="sub-icon-menu">
+          <ion-buttons>
+            <ion-button fill="clear" slot="icon-only">
+              <ion-icon name="cart-outline"></ion-icon>
+            </ion-button>
+            <ion-button fill="clear" slot="icon-only">
+              <ion-icon name="person-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-header>

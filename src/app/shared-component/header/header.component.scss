@@ -1,0 +1,25 @@
+.logo {
+  height: 50px;
+}
+
+.sub-menus,
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ion-buttons {
+    margin-top: 5px;
+  }
+  ion-button {
+    margin-right: 6px;
+    ion-icon {
+      margin-right: 4px;
+    }
+  }
+}
+.logo-box {
+  justify-content: flex-start;
+}
+ion-buttons {
+  margin-top: 5px;
+}
