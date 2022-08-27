@@ -2,4 +2,30 @@
 <app-header [title]="'UI Resources'"></app-header>
 
 <ion-content [fullscreen]="true">
+  <!-- =============== home Page design ================ -->
+
+  <ion-row>
+    <!-- ===== Product List Ui ===== -->
+    <ion-col size="7">
+      <div class="products-cards-container">
+        <ion-card class="product-card">
+          <img src="assets/image/products/1.png" alt="" class="product-img">
+          <ion-card-content>
+            <ion-text>
+              <p>Product Name</p>
+            </ion-text>
+            <ion-text>
+              <p>Rs 1230</p>
+            </ion-text>
+            <ion-button color="success" size="small">
+              Add to Cart
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-col>
+    <!-- ===== Product Details Ui ===== -->
+    <ion-col size="5">
+    </ion-col>
+  </ion-row>
 </ion-content>

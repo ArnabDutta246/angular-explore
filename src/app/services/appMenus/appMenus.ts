@@ -4,7 +4,7 @@ export interface AppMenusInterface {
     icon: string;
 }
 export const AppMenus: AppMenusInterface[] = [
-    { title: 'Home', url: '/folder/Inbox', icon: 'home' },
+    { title: 'Home', url: '/home', icon: 'home' },
     { title: 'Cart', url: '/folder/Outbox', icon: 'cart' },
     { title: 'Profile', url: '/folder/Favorites', icon: 'person' },
     { title: 'Wishlist', url: '/folder/Archived', icon: 'heart' },
