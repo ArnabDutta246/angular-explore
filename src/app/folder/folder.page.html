@@ -4,148 +4,74 @@
 <ion-content [fullscreen]="true">
   <!-- =============== home Page design ================ -->
 
-  <ion-row>
-    <!-- ===== Product List Ui ===== -->
-    <ion-col size="8">
-      <div class="products-cards-container ion-margin-top">
-        <!-- every single product card -->
-        <ion-card class="product-card">
-          <div class="product-img">
-            <img src="assets/image/products/1.png" alt="">
-          </div>
-          <ion-card-content class="ion-no-padding">
-            <ion-text>
-              <p>Product Name</p>
-            </ion-text>
-            <ion-text>
-              <p>Rs 1230</p>
-            </ion-text>
-            <ion-button fill="outline" color="medium" size="small" expand="block">
-              Add to Cart
-            </ion-button>
-          </ion-card-content>
-        </ion-card>
-        <!-- every single product card -->
-        <ion-card class="product-card">
-          <div class="product-img">
-            <img src="assets/image/products/2.png" alt="">
-          </div>
-          <ion-card-content class="ion-no-padding">
-            <ion-text>
-              <p>Product Name</p>
-            </ion-text>
-            <ion-text>
-              <p>Rs 1230</p>
-            </ion-text>
-            <ion-buttons>
-              <ion-button fill="solid" color="light">
-                <ion-icon name="remove-circle-outline"></ion-icon>
-              </ion-button>
-              <ion-button color="">
-                3 Items
-              </ion-button>
-              <ion-button fill="solid" color="light">
-                <ion-icon name="add-circle-outline"></ion-icon>
-              </ion-button>
-            </ion-buttons>
-          </ion-card-content>
-        </ion-card>
-        <!-- every single product card -->
-        <ion-card class="product-card">
-          <div class="product-img">
-            <img src="assets/image/products/4.png" alt="">
-          </div>
-          <ion-card-content class="ion-no-padding">
-            <ion-text>
-              <p>Product Name</p>
-            </ion-text>
-            <ion-text>
-              <p>Rs 1230</p>
-            </ion-text>
-            <ion-button fill="outline" color="medium" size="small" expand="block">
-              Add to Cart
-            </ion-button>
-          </ion-card-content>
-        </ion-card>
-        <!-- every single product card -->
-        <ion-card class="product-card">
-          <div class="product-img">
-            <img src="assets/image/products/6.png" alt="">
-          </div>
-          <ion-card-content class="ion-no-padding">
-            <ion-text>
-              <p>Product Name</p>
-            </ion-text>
-            <ion-text>
-              <p>Rs 1230</p>
-            </ion-text>
-            <ion-button fill="outline" color="medium" size="small" expand="block">
-              Add to Cart
-            </ion-button>
-          </ion-card-content>
-        </ion-card>
-        <!-- every single product card -->
-        <ion-card class="product-card">
-          <div class="product-img">
-            <img src="assets/image/products/5.png" alt="">
-          </div>
-          <ion-card-content class="ion-no-padding">
-            <ion-text>
-              <p>Product Name</p>
-            </ion-text>
-            <ion-text>
-              <p>Rs 1230</p>
-            </ion-text>
-            <ion-buttons>
-              <ion-button fill="solid" color="light">
-                <ion-icon name="remove-circle-outline"></ion-icon>
-              </ion-button>
-              <ion-button color="">
-                3 Items
-              </ion-button>
-              <ion-button fill="solid" color="light">
-                <ion-icon name="add-circle-outline"></ion-icon>
-              </ion-button>
-            </ion-buttons>
-          </ion-card-content>
-        </ion-card>
-        <!-- every single product card -->
-        <ion-card class="product-card">
-          <div class="product-img">
-            <img src="assets/image/products/7.png" alt="">
-          </div>
-          <ion-card-content class="ion-no-padding">
-            <ion-text>
-              <p>Product Name</p>
-            </ion-text>
-            <ion-text>
-              <p>Rs 1230</p>
-            </ion-text>
-            <ion-button fill="outline" color="medium" size="small" expand="block">
-              Add to Cart
-            </ion-button>
-          </ion-card-content>
-        </ion-card>
-      </div>
-    </ion-col>
-    <!-- ===== Product Details Ui ===== -->
-    <ion-col size="4">
-      <ion-card class="product-details-card ion-margin-top">
-        <div class="product-image">
-          <img src="assets/image/products/1.png" alt="" srcset="">
-        </div>
-        <ion-card-content class="ion-padding">
-          <ion-row>
-            <ion-col size="6">
+    <ion-row>
+      <!-- ===== Product List Ui ===== -->
+      <ion-col size="8">
+        <!-- ===== Category List ===== -->
+       <div class="clip-container">
+        <ion-searchbar showCancelButton="focus" mode="ios"></ion-searchbar>
+  
+        <ion-chip color="primary">
+          <ion-icon name="list-circle" color="primary"></ion-icon>
+          <ion-label>All Products</ion-label>
+        </ion-chip>
+        <ion-chip color="medium">
+          <ion-icon name="rose" color="dark"></ion-icon>
+          <ion-label>Dress</ion-label>
+        </ion-chip>
+        <ion-chip color="medium">
+          <ion-icon name="sparkles" color="dark"></ion-icon>
+          <ion-label>Sharee</ion-label>
+        </ion-chip>
+        <ion-chip color="medium">
+          <ion-icon name="star" color="dark"></ion-icon>
+          <ion-label>High Reviewed</ion-label>
+        </ion-chip>
+        <ion-chip color="medium">
+          <ion-icon name="star-half" color="dark"></ion-icon>
+          <ion-label>Low Reviewed</ion-label>
+        </ion-chip>
+        <ion-chip color="medium">
+          <ion-icon name="arrow-up" color="dark"></ion-icon>
+          <ion-label>High to Low</ion-label>
+        </ion-chip>
+        <ion-chip color="medium">
+          <ion-icon name="arrow-down" color="dark"></ion-icon>
+          <ion-label>Low to High</ion-label>
+        </ion-chip>
+       </div>
+        <!-- ===== Product List container ===== -->
+        <div class="products-cards-container ion-margin-top">
+          <!-- every single product card -->
+          <ion-card class="product-card">
+            <div class="product-img">
+              <img src="assets/image/products/1.png" alt="">
+            </div>
+            <ion-card-content class="ion-no-padding">
               <ion-text>
                 <p>Product Name</p>
               </ion-text>
               <ion-text>
                 <p>Rs 1230</p>
               </ion-text>
-            </ion-col>
-            <ion-col size="6">
-              <ion-buttons expand="block">
+              <ion-button fill="outline" color="medium" size="small" expand="block">
+                Add to Cart
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+          <!-- every single product card -->
+          <ion-card class="product-card">
+            <div class="product-img">
+              <img src="assets/image/products/2.png" alt="">
+            </div>
+            <ion-card-content class="ion-no-padding">
+              <ion-text>
+                <p>Product Name</p>
+              </ion-text>
+              <ion-text>
+                <p>Rs 1230</p>
+              </ion-text>
+              <ion-buttons>
                 <ion-button fill="solid" color="light">
                   <ion-icon name="remove-circle-outline"></ion-icon>
                 </ion-button>
@@ -156,19 +82,129 @@
                   <ion-icon name="add-circle-outline"></ion-icon>
                 </ion-button>
               </ion-buttons>
+            </ion-card-content>
+          </ion-card>
+          <!-- every single product card -->
+          <ion-card class="product-card">
+            <div class="product-img">
+              <img src="assets/image/products/4.png" alt="">
+            </div>
+            <ion-card-content class="ion-no-padding">
+              <ion-text>
+                <p>Product Name</p>
+              </ion-text>
+              <ion-text>
+                <p>Rs 1230</p>
+              </ion-text>
               <ion-button fill="outline" color="medium" size="small" expand="block">
                 Add to Cart
               </ion-button>
-            </ion-col>
-          </ion-row>
-          <ion-text>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam tempora reprehenderit quia
-              pariatur quibusdam nesciunt voluptatum quaerat est iste.
-            </p>
-          </ion-text>
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-  </ion-row>
+            </ion-card-content>
+          </ion-card>
+          <!-- every single product card -->
+          <ion-card class="product-card">
+            <div class="product-img">
+              <img src="assets/image/products/6.png" alt="">
+            </div>
+            <ion-card-content class="ion-no-padding">
+              <ion-text>
+                <p>Product Name</p>
+              </ion-text>
+              <ion-text>
+                <p>Rs 1230</p>
+              </ion-text>
+              <ion-button fill="outline" color="medium" size="small" expand="block">
+                Add to Cart
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+          <!-- every single product card -->
+          <ion-card class="product-card">
+            <div class="product-img">
+              <img src="assets/image/products/5.png" alt="">
+            </div>
+            <ion-card-content class="ion-no-padding">
+              <ion-text>
+                <p>Product Name</p>
+              </ion-text>
+              <ion-text>
+                <p>Rs 1230</p>
+              </ion-text>
+              <ion-buttons>
+                <ion-button fill="solid" color="light">
+                  <ion-icon name="remove-circle-outline"></ion-icon>
+                </ion-button>
+                <ion-button color="">
+                  3 Items
+                </ion-button>
+                <ion-button fill="solid" color="light">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            </ion-card-content>
+          </ion-card>
+          <!-- every single product card -->
+          <ion-card class="product-card">
+            <div class="product-img">
+              <img src="assets/image/products/7.png" alt="">
+            </div>
+            <ion-card-content class="ion-no-padding">
+              <ion-text>
+                <p>Product Name</p>
+              </ion-text>
+              <ion-text>
+                <p>Rs 1230</p>
+              </ion-text>
+              <ion-button fill="outline" color="medium" size="small" expand="block">
+                Add to Cart
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+      <!-- ===== Product Details Ui ===== -->
+      <ion-col size="4">
+        <ion-card class="product-details-card ion-margin-top">
+          <div class="product-image">
+            <img src="assets/image/products/1.png" alt="" srcset="">
+          </div>
+          <ion-card-content class="ion-padding">
+            <ion-row>
+              <ion-col size="6">
+                <ion-text>
+                  <p>Product Name</p>
+                </ion-text>
+                <ion-text>
+                  <p>Rs 1230</p>
+                </ion-text>
+              </ion-col>
+              <ion-col size="6">
+                <ion-buttons expand="block">
+                  <ion-button fill="solid" color="light">
+                    <ion-icon name="remove-circle-outline"></ion-icon>
+                  </ion-button>
+                  <ion-button color="">
+                    3 Items
+                  </ion-button>
+                  <ion-button fill="solid" color="light">
+                    <ion-icon name="add-circle-outline"></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+                <ion-button fill="outline" color="medium" size="small" expand="block">
+                  Add to Cart
+                </ion-button>
+              </ion-col>
+            </ion-row>
+            <ion-text>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam tempora reprehenderit quia
+                pariatur quibusdam nesciunt voluptatum quaerat est iste.
+              </p>
+            </ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+
 </ion-content>
